@@ -23,16 +23,16 @@ const Navbar = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
         isScrolled
-          ? "py-3 bg-white/90 backdrop-blur-md shadow-sm"
+          ? "py-3 bg-[#1A1F2C]/90 backdrop-blur-md shadow-sm border-b border-[#2A3042]/50"
           : "py-5 bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a
           href="#"
-          className="flex items-center space-x-2 text-xl font-bold text-barber-dark"
+          className="flex items-center space-x-2 text-xl font-bold text-white"
         >
-          <span className="text-barber-accent">Corte</span>
+          <span className="text-[#4D9EEB]">Corte</span>
           <span>Agendado</span>
         </a>
 
@@ -60,7 +60,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-barber-dark focus:outline-none"
+          className="md:hidden text-white focus:outline-none"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? (
@@ -73,7 +73,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white absolute top-full left-0 right-0 shadow-lg">
+        <div className="md:hidden bg-[#21273A] absolute top-full left-0 right-0 shadow-lg border-b border-[#2A3042]/50">
           <div className="flex flex-col px-6 py-4 space-y-4">
             <a
               href="#features"

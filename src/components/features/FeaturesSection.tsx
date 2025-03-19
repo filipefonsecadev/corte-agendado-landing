@@ -50,11 +50,11 @@ const FeatureCard = ({ icon, title, description, delay }: FeatureCardProps) => {
       ref={cardRef}
       className="feature-card opacity-0"
     >
-      <div className="w-12 h-12 bg-barber-accent/10 rounded-full flex items-center justify-center text-barber-accent mb-4">
+      <div className="w-12 h-12 bg-[#6C5CE7]/10 rounded-full flex items-center justify-center text-[#4D9EEB] mb-4">
         {icon}
       </div>
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+      <h3 className="text-xl font-bold mb-2 text-white">{title}</h3>
+      <p className="text-gray-300">{description}</p>
     </div>
   );
 };
@@ -128,7 +128,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section id="features" className="py-20 bg-white" ref={sectionRef}>
+    <section id="features" className="py-20 bg-[#1A1F2C]" ref={sectionRef}>
       <div className="section-container">
         <h2 
           ref={titleRef} 
@@ -159,7 +159,7 @@ const FeaturesSection = () => {
           <a
             ref={buttonRef}
             href="#plans"
-            className="inline-flex items-center opacity-0 text-barber-accent font-medium hover:text-barber-accent-hover transition-colors group"
+            className="inline-flex items-center opacity-0 text-[#4D9EEB] font-medium hover:text-[#6C5CE7] transition-colors group"
           >
             Veja Todas as Funcionalidades
             <ChevronRight className="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1" />

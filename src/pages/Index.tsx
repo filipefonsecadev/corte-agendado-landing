@@ -22,22 +22,22 @@ const Index = () => {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-white">
+      <div className="min-h-screen flex items-center justify-center bg-[#1A1F2C]">
         <div className="text-center">
           <div className="mb-4 relative">
             <span className="text-3xl font-bold">
-              <span className="text-barber-accent">Corte</span>{" "}
-              <span className="text-barber-dark">Agendado</span>
+              <span className="text-[#4D9EEB]">Corte</span>{" "}
+              <span className="text-white">Agendado</span>
             </span>
           </div>
-          <div className="w-16 h-1 bg-gradient-to-r from-barber-accent to-barber-accent/50 mx-auto rounded-full animate-pulse"></div>
+          <div className="w-16 h-1 bg-gradient-to-r from-[#6C5CE7] to-[#4D9EEB] mx-auto rounded-full animate-pulse"></div>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#1A1F2C]">
       <Navbar />
       <main>
         <HeroSection />
@@ -81,9 +81,9 @@ const ScrollToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-6 right-6 bg-barber-accent p-3 rounded-full 
+      className={`fixed bottom-6 right-6 bg-[#6C5CE7] p-3 rounded-full 
                  shadow-lg text-white transition-opacity duration-300 
-                 hover:bg-barber-accent-hover focus:outline-none z-50
+                 hover:bg-[#5b4dd1] focus:outline-none z-50
                  ${isVisible ? "opacity-100" : "opacity-0 pointer-events-none"}`}
       aria-label="Voltar ao topo"
     >

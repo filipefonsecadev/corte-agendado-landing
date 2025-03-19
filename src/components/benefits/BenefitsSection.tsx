@@ -43,12 +43,12 @@ const Benefit = ({ icon, title, description, delay }: BenefitProps) => {
       ref={benefitRef}
       className="flex items-start opacity-0"
     >
-      <div className="mr-4 p-3 bg-barber-accent/10 rounded-lg text-barber-accent">
+      <div className="mr-4 p-3 bg-[#6C5CE7]/10 rounded-lg text-[#4D9EEB]">
         {icon}
       </div>
       <div>
-        <h3 className="text-xl font-bold mb-2">{title}</h3>
-        <p className="text-gray-600">{description}</p>
+        <h3 className="text-xl font-bold mb-2 text-white">{title}</h3>
+        <p className="text-gray-300">{description}</p>
       </div>
     </div>
   );
@@ -106,13 +106,13 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section id="benefits" className="py-20 bg-white" ref={sectionRef}>
+    <section id="benefits" className="py-20 bg-[#1A1F2C]" ref={sectionRef}>
       <div className="section-container">
         <h2 
           ref={titleRef} 
           className="section-title text-center mb-16 opacity-0"
         >
-          Por que escolher o <span className="text-barber-accent">Corte Agendado</span>?
+          Por que escolher o <span className="text-[#4D9EEB]">Corte Agendado</span>?
         </h2>
 
         <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -142,19 +142,19 @@ const BenefitsSection = () => {
               
               {/* Floating mockup */}
               <div className="absolute -right-6 -bottom-6 glass-card p-4 shadow-lg rounded-xl">
-                <div className="bg-white rounded-lg p-3 w-[260px]">
+                <div className="bg-[#21273A] rounded-lg p-3 w-[260px] border border-[#2A3042]/50">
                   <div className="flex justify-between items-center mb-3">
-                    <div className="font-bold text-barber-dark">Dashboard</div>
-                    <div className="text-sm text-barber-accent">Hoje</div>
+                    <div className="font-bold text-white">Dashboard</div>
+                    <div className="text-sm text-[#4D9EEB]">Hoje</div>
                   </div>
                   <div className="space-y-2 mb-3">
-                    <div className="h-2 bg-gray-100 rounded-full w-full"></div>
-                    <div className="h-2 bg-gray-100 rounded-full w-3/4"></div>
-                    <div className="h-2 bg-gray-100 rounded-full w-1/2"></div>
+                    <div className="h-2 bg-[#2A3042] rounded-full w-full"></div>
+                    <div className="h-2 bg-[#2A3042] rounded-full w-3/4"></div>
+                    <div className="h-2 bg-[#2A3042] rounded-full w-1/2"></div>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <div className="text-gray-500">Agendamentos</div>
-                    <div className="font-bold text-barber-accent">+18%</div>
+                    <div className="text-gray-400">Agendamentos</div>
+                    <div className="font-bold text-[#4D9EEB]">+18%</div>
                   </div>
                 </div>
               </div>

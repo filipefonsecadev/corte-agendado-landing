@@ -30,29 +30,29 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden bg-gradient-to-b from-gray-50 to-white">
-      <div className="absolute inset-0 bg-hero-pattern bg-cover bg-center opacity-5 z-0"></div>
-      <div className="absolute inset-0 bg-gradient-radial from-transparent to-white z-0"></div>
+    <section className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden bg-[#1A1F2C]">
+      <div className="absolute inset-0 bg-[url('/lovable-uploads/792cee7d-04bb-4771-8d60-9eab20dda90e.png')] bg-cover bg-center opacity-5 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-radial from-transparent to-[#1A1F2C] z-0"></div>
 
       <div className="section-container relative z-10 flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0 reveal-animation">
           <div
-            className="inline-block px-4 py-1 mb-6 rounded-full bg-barber-accent/10 text-barber-accent text-sm font-medium opacity-0"
+            className="inline-block px-4 py-1 mb-6 rounded-full bg-[#6C5CE7]/10 text-[#4D9EEB] text-sm font-medium opacity-0"
             ref={(el) => (elementRefs.current[0] = el)}
             style={{ "--animation-order": 0 } as React.CSSProperties}
           >
             Sistema de Agendamento para Barbearias
           </div>
           <h1
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight opacity-0"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white opacity-0"
             ref={(el) => (elementRefs.current[1] = el)}
             style={{ "--animation-order": 1 } as React.CSSProperties}
           >
             Gerencie sua barbearia com facilidade e{" "}
-            <span className="text-barber-accent">cresça seu negócio</span>
+            <span className="text-[#4D9EEB]">cresça seu negócio</span>
           </h1>
           <p
-            className="text-lg text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0 opacity-0"
+            className="text-lg text-gray-300 mb-8 max-w-xl mx-auto lg:mx-0 opacity-0"
             ref={(el) => (elementRefs.current[2] = el)}
             style={{ "--animation-order": 2 } as React.CSSProperties}
           >
@@ -109,8 +109,8 @@ const HeroSection = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
               </div>
               <div>
-                <p className="text-sm font-medium">Agendamentos</p>
-                <p className="text-barber-accent font-bold">+5000/mês</p>
+                <p className="text-sm font-medium text-gray-300">Agendamentos</p>
+                <p className="text-[#4D9EEB] font-bold">+5000/mês</p>
               </div>
             </div>
           </div>
@@ -130,8 +130,8 @@ const HeroSection = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-calendar"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
               </div>
               <div>
-                <p className="text-sm font-medium">Agenda</p>
-                <p className="text-blue-500 font-bold">Otimizada</p>
+                <p className="text-sm font-medium text-gray-300">Agenda</p>
+                <p className="text-[#4D9EEB] font-bold">Otimizada</p>
               </div>
             </div>
           </div>
@@ -142,7 +142,7 @@ const HeroSection = () => {
       <div className="absolute bottom-0 left-0 right-0">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
-            fill="#ffffff"
+            fill="#1A1F2C"
             fillOpacity="1"
             d="M0,288L48,272C96,256,192,224,288,213.3C384,203,480,213,576,229.3C672,245,768,267,864,261.3C960,256,1056,224,1152,208C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
